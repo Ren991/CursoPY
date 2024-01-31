@@ -14,3 +14,5 @@ class Monitor:
 if __name__ == "__main__":
     monitor = Monitor("Asus", 15)
     print(monitor)
+    monitor2 = Monitor("Acer", 27)
+    print(monitor2)
