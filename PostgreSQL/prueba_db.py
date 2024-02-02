@@ -7,15 +7,16 @@ conexion = psycopg2.connect(
             port='5432',
             database='test_db')
 
+try:
+    with conexion:
+        with conexion.cursor() as cursor: #=> un cursor es un objeto que nos permite ejecutar sentencia SQL en postgres
 
-cursor = conexion.cursor() #=> un cursor es un objeto que nos permite ejecutar sentencia SQL en postgres
-
-sentencia = "SELECT * FROM persona" #=> consulta sql
-
-cursor.execute(sentencia)
-registros = cursor.fetchall()
-
-print(registros)
-
-cursor.close()
-conexion.close()
+            sentencia = "SELECT * FROM persona WHERE id_persona = %s" #=> %s parámetro posicional, consulta sql
+            id_persona = input("Proporciona el valor id_persona: ")
+            cursor.execute(sentencia,(id_persona,)) #=> Se le pasa el parámetro de id_persona , tiene que ser tupla
+            registros = cursor.fetchone() #=> fetchall() consulta todos los registros || fetchone() consulta un solo registros
+            print(registros)
+except Exception as e:
+    print(f"Ocurrió un error: {e}")
+finally:
+    conexion.close()
