@@ -19,3 +19,40 @@
 03:18:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x000002337399E8A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 03:19:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x0000012F44BBE8A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 03:19:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x0000012F44C0E880; closed: 0>
+03:51:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x000002195D206020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:51:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x000002195D7EA960; closed: 0>
+03:51:S PM: DEBUG [persona_dao.py:29] 
+            Id Persona: 1, Nombre: Juan
+            Apellido: Perez, Email: jperez@mail.com
+        
+03:51:S PM: DEBUG [persona_dao.py:29] 
+            Id Persona: 2, Nombre: Ivonne
+            Apellido: Gutierrez, Email: igutierrez@mail.com
+        
+03:51:S PM: DEBUG [persona_dao.py:29] 
+            Id Persona: 8, Nombre: Coco
+            Apellido: Coca, Email: coco@mail.com
+        
+03:56:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x0000013F095029B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:56:S PM: DEBUG [persona_dao.py:31] Persona insertada: 
+            Id Persona: None, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+03:56:S PM: DEBUG [persona_dao.py:40] Personas insertadas: 1
+03:56:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x0000013F09556880; closed: 0>
+03:56:S PM: DEBUG [persona_dao.py:44] 
+            Id Persona: 1, Nombre: Juan
+            Apellido: Perez, Email: jperez@mail.com
+        
+03:56:S PM: DEBUG [persona_dao.py:44] 
+            Id Persona: 2, Nombre: Ivonne
+            Apellido: Gutierrez, Email: igutierrez@mail.com
+        
+03:56:S PM: DEBUG [persona_dao.py:44] 
+            Id Persona: 8, Nombre: Coco
+            Apellido: Coca, Email: coco@mail.com
+        
+03:56:S PM: DEBUG [persona_dao.py:44] 
+            Id Persona: 9, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
