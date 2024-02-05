@@ -1,5 +1,6 @@
-from persona import Persona
 from conexion import Conexion
+from persona import Persona
+
 from logger_base import log
 
 class PersonaDAO:
@@ -13,31 +14,45 @@ class PersonaDAO:
     
     @classmethod
     def seleccionar(cls):
-        with Conexion.obtenerCursor() as cursor:
-            cursor.execute(cls._SELECCIONAR)
-            registros = cursor.fetchall()
-            personas = []
-            for registro in registros:
-                persona = Persona(registro[0],registro[1], registro[2], registro[3])
-                personas.append(persona)
-            return personas
+        with Conexion.obtenerConexion() as conexion:
+            with conexion.cursor() as cursor:
+                cursor.execute(cls._SELECCIONAR)
+                registros = cursor.fetchall()
+                personas = []
+                for registro in registros:
+                    persona = Persona(registro[0],registro[1], registro[2], registro[3])
+                    personas.append(persona)
+                return personas
     
     @classmethod
     def insertar(cls, persona):
         with Conexion.obtenerConexion() as conexion:
-            with Conexion.obtenerCursor() as cursor:
+            with conexion.cursor() as cursor:
                 valores = (persona.nombre, persona.apellido, persona.email)
                 cursor.execute(cls._INSERTAR , valores)
                 log.debug(f"Persona insertada: {persona}")
+                return cursor.rowcount
+            
+    @classmethod
+    def actualizar(cls, persona):
+        with Conexion.obtenerConexion() as conexion:
+            with conexion.cursor() as cursor:
+                valores = (persona.nombre, persona.apellido, persona.email, persona.id_persona)
+                cursor.execute(cls._ACTUALIZAR, valores)
+                log.debug(f"Persona actualizada: {persona}")
                 return cursor.rowcount
         
 
 if __name__ == "__main__":
     
-    #INSERTAR en registro
+    #INSERTAR un  registro
     persona1 = Persona(nombre = "Pepe", apellido= "Rodriguez", email= "peperod@mail.com")
     personas_insertadas = PersonaDAO.insertar(persona1)
     log.debug(f"Personas insertadas: {personas_insertadas}")
+    #ACTUALIZAR un registro
+    persona1 = Persona(1,"Juan carlos","Juarez", "cjjuarez@mail.com")
+    personas_actualizadas = PersonaDAO.actualizar(persona1)
+    log.debug(f"personas actualizadas: {personas_actualizadas}")
     #Seleccionar objetos
     personas = PersonaDAO.seleccionar()
     for persona in personas:

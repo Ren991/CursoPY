@@ -56,3 +56,67 @@
             Id Persona: 9, Nombre: Pepe
             Apellido: Rodriguez, Email: peperod@mail.com
         
+04:08:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x00000165061F68A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:08:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x0000016506246880; closed: 0>
+04:08:S PM: DEBUG [persona_dao.py:32] Persona insertada: 
+            Id Persona: None, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+04:08:S PM: DEBUG [persona_dao.py:50] Personas insertadas: 1
+04:58:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x000001A3AE0568A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:58:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x000001A3AE0A6880; closed: 0>
+04:58:S PM: DEBUG [persona_dao.py:32] Persona insertada: 
+            Id Persona: None, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+04:58:S PM: DEBUG [persona_dao.py:50] Personas insertadas: 1
+05:00:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x000002B93AC928A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:00:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x000002B93ACE2880; closed: 0>
+05:00:S PM: DEBUG [persona_dao.py:33] Persona insertada: 
+            Id Persona: None, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+05:00:S PM: DEBUG [persona_dao.py:51] Personas insertadas: 1
+05:01:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x00000199FC6028A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:01:S PM: DEBUG [persona_dao.py:33] Persona insertada: 
+            Id Persona: None, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:51] Personas insertadas: 1
+05:01:S PM: DEBUG [persona_dao.py:42] Persona actualizada: 
+            Id Persona: 1, Nombre: Juan carlos
+            Apellido: Juarez, Email: cjjuarez@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:55] personas actualizadas: 1
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 1, Nombre: Juan carlos
+            Apellido: Juarez, Email: cjjuarez@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 2, Nombre: Ivonne
+            Apellido: Gutierrez, Email: igutierrez@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 8, Nombre: Coco
+            Apellido: Coca, Email: coco@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 9, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 10, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 11, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 12, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+05:01:S PM: DEBUG [persona_dao.py:59] 
+            Id Persona: 13, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
