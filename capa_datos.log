@@ -14,3 +14,8 @@
             Id Persona: 1, Nombre: None
             Apellido: None, Email: None
         
+02:58:S PM: ERROR [conexion.py:27] Ocurrió una excepción 
+03:18:S PM: ERROR [conexion.py:27] Ocurrió una excepción 
+03:18:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x000002337399E8A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:19:S PM: DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x0000012F44BBE8A0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:19:S PM: DEBUG [conexion.py:37] Se abrió correctamente el cursor : <cursor object at 0x0000012F44C0E880; closed: 0>
