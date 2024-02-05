@@ -1,0 +1,4 @@
+12:40:S PM: DEBUG [logger_base.py:15] Mensaje a nivel debug
+12:40:S PM: INFO [logger_base.py:16] Mensaje a nivel info
+12:40:S PM: ERROR [logger_base.py:17] Mensaje a nivel de error
+12:40:S PM: CRITICAL [logger_base.py:18] Mensaje a nivel critico
