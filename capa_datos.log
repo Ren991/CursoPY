@@ -815,3 +815,21 @@
 05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 5 Ale 1234
 05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 6 Ale 1234
 05:16:S PM: INFO [menu_app_usuario.py:22] Salimos de la aplicacion
+05:23:S PM: INFO [menu_app_usuario.py:26] Usuarios insertados: 1
+05:23:S PM: INFO [menu_app_usuario.py:43] Salimos de la aplicacion
+05:24:S PM: INFO [menu_app_usuario.py:34] Usuarios actualizados: 1
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 1 jperez 123
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 2 karlagomez 8910
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 3 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 4 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 5 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 6 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 7 mlara 567
+05:24:S PM: INFO [menu_app_usuario.py:40] Usuarios eliminados: 1
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 1 jperez 123
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 2 karlagomez 8910
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 3 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 4 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 5 Ale 1234
+05:24:S PM: INFO [menu_app_usuario.py:20] Usuario: 6 Ale 1234
+05:25:S PM: INFO [menu_app_usuario.py:43] Salimos de la aplicacion
