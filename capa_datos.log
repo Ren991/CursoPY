@@ -795,3 +795,23 @@
 05:08:S PM: DEBUG [usuario_dao.py:68] Usuario: 4 Ale 1234
 05:08:S PM: DEBUG [usuario_dao.py:68] Usuario: 5 Ale 1234
 05:08:S PM: DEBUG [usuario_dao.py:68] Usuario: 6 Ale 1234
+05:15:S PM: DEBUG [cursorDelPool.py:10] Inicio del método with __enter__
+05:15:S PM: DEBUG [conexion.py:21] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001D4FD1D9F50>
+05:15:S PM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x000001D4FEFBD580; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:15:S PM: DEBUG [usuario_dao.py:14] Seleccionando usuarios
+05:15:S PM: DEBUG [cursorDelPool.py:16] Se ejecutó método __exit__
+05:15:S PM: DEBUG [cursorDelPool.py:22] Commit de la transaccion
+05:15:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x000001D4FEFBD580; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:15:S PM: INFO [menu_app_usuario.py:19] Usuario: 1 jperez 123
+05:15:S PM: INFO [menu_app_usuario.py:19] Usuario: 2 kgomez 456
+05:15:S PM: INFO [menu_app_usuario.py:19] Usuario: 3 Ale 1234
+05:15:S PM: INFO [menu_app_usuario.py:19] Usuario: 4 Ale 1234
+05:15:S PM: INFO [menu_app_usuario.py:19] Usuario: 5 Ale 1234
+05:15:S PM: INFO [menu_app_usuario.py:19] Usuario: 6 Ale 1234
+05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 1 jperez 123
+05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 2 kgomez 456
+05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 3 Ale 1234
+05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 4 Ale 1234
+05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 5 Ale 1234
+05:16:S PM: INFO [menu_app_usuario.py:19] Usuario: 6 Ale 1234
+05:16:S PM: INFO [menu_app_usuario.py:22] Salimos de la aplicacion
