@@ -473,3 +473,11 @@
 11:25:S AM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x000001AB4E508E10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 11:25:S AM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x000001AB4E508E10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 11:25:S AM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x000001AB4E508E10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:17:S PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:17:S PM: DEBUG [conexion.py:21] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000165AE934390>
+12:17:S PM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x00000165B04D9360; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:17:S PM: DEBUG [cursor_del_pool.py:29] Dentro del bloque with
+12:17:S PM: DEBUG [cursor_del_pool.py:31] [(8, 'Coco', 'Coca', 'coco@mail.com'), (9, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (10, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (11, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (12, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (13, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (14, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (1, 'Juan carlos', 'Juarez', 'cjjuarez@mail.com'), (15, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (16, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (17, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (18, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (19, 'Pepe', 'Rodriguez', 'peperod@mail.com'), (20, 'Pepe', 'Rodriguez', 'peperod@mail.com')]
+12:17:S PM: DEBUG [cursor_del_pool.py:16] Se ejecutó método __exit__
+12:17:S PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:17:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x00000165B04D9360; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
