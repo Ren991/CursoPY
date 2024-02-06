@@ -481,3 +481,159 @@
 12:17:S PM: DEBUG [cursor_del_pool.py:16] Se ejecutó método __exit__
 12:17:S PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
 12:17:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x00000165B04D9360; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:41:S PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:41:S PM: DEBUG [conexion.py:21] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000149C91DC450>
+12:41:S PM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x00000149C913D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:41:S PM: DEBUG [persona_dao.py:34] Persona insertada: 
+            Id Persona: None, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [cursor_del_pool.py:16] Se ejecutó método __exit__
+12:41:S PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:41:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x00000149C913D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:41:S PM: DEBUG [persona_dao.py:59] Personas insertadas: 1
+12:41:S PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:41:S PM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x00000149C913D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:41:S PM: DEBUG [cursor_del_pool.py:16] Se ejecutó método __exit__
+12:41:S PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:41:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x00000149C913D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 1, Nombre: Juan carlos
+            Apellido: Juarez, Email: cjjuarez@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 8, Nombre: Coco
+            Apellido: Coca, Email: coco@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 9, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 10, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 11, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 12, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 13, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 14, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 15, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 16, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 17, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 18, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 19, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 20, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:41:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 21, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:42:S PM: DEBUG [conexion.py:21] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000198057DC450>
+12:42:S PM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x000001980573D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:42:S PM: DEBUG [persona_dao.py:34] Persona insertada: 
+            Id Persona: None, Nombre: Ale
+            Apellido: Martinez, Email: ale@mail.com
+        
+12:42:S PM: DEBUG [cursor_del_pool.py:16] Se ejecutó método __exit__
+12:42:S PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:42:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x000001980573D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:42:S PM: DEBUG [persona_dao.py:59] Personas insertadas: 1
+12:42:S PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:42:S PM: DEBUG [conexion.py:32] Conexión obtenida del pool: <connection object at 0x000001980573D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:42:S PM: DEBUG [cursor_del_pool.py:16] Se ejecutó método __exit__
+12:42:S PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:42:S PM: DEBUG [conexion.py:38] Regresamos la conexion al pool: <connection object at 0x000001980573D470; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 1, Nombre: Juan carlos
+            Apellido: Juarez, Email: cjjuarez@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 8, Nombre: Coco
+            Apellido: Coca, Email: coco@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 9, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 10, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 11, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 12, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 13, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 14, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 15, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 16, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 17, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 18, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 19, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 20, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 21, Nombre: Pepe
+            Apellido: Rodriguez, Email: peperod@mail.com
+        
+12:42:S PM: DEBUG [persona_dao.py:73] 
+            Id Persona: 22, Nombre: Ale
+            Apellido: Martinez, Email: ale@mail.com
+        
