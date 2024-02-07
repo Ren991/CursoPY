@@ -19,3 +19,4 @@ resultado = bool(valor)
 
 print(f"Valor {valor}, resultado: {resultado}")
 
+
