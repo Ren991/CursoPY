@@ -18,3 +18,35 @@ print(f"a: {a:.5f}")
 a = 4.0 +5 
 print(a)
 print(type(a))
+
+# Manejo de valores infitos. Existe un valor negativo infinito y un valor positivo infinito.
+
+import math #=> libreria math contiene un módulo para saber si un float es infinito
+from decimal import Decimal
+
+infinito_positivo = float("inf")
+""" print(f"Infinito positivo: {infinito_positivo}")
+print(f"Es infinito: {math.isinf(infinito_positivo)}") """
+
+infinito_negativo = float("-inf")
+""" print(f"infinito negativo: {infinito_negativo}")
+print(f"Es infinito negativo: {math.isinf(infinito_negativo)}") """
+
+infinito_positivo = math.inf
+
+""" print(f"Infinito positivo: {infinito_positivo}")
+print(f"Es infinito: {math.isinf(infinito_positivo)}") """
+
+infinito_negativo = -math.inf
+
+""" print(f"Infinito negativo: {infinito_negativo}")
+print(f"Es infinito: {math.isinf(infinito_negativo)}") """
+
+#Modulo decimal 
+infinito_positivo = Decimal("Infinity")
+print(f"Infinito positivo: {infinito_positivo}")
+print(f"Es infinito: {math.isinf(infinito_positivo)}")
+
+infinito_negativo = Decimal("-Infinity")
+print(f"Infinito negativo: {infinito_negativo}")
+print(f"Es infinito: {math.isinf(infinito_negativo)}")
