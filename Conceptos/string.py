@@ -49,3 +49,23 @@ print(f"Lista cursos: {lista_cursos}")
 cursos = "Java , Python , Javascript , Angular , Spring , Excel"
 lista_cursos = cursos.split(" , ",3)#=> con el segundo parámetro los primeros tres elementos se separan y el resto queda en una cadena.
 print(f"Lista cursos: {lista_cursos}")
+
+#Dar formato a un str
+nombre ="Juan"
+edad = 28
+
+mensaje_con_formato = "Mi nombre es %s y tengo %d años"%(nombre,edad)
+""" print(mensaje_con_formato) """
+
+persona = ("Karla","Gomez",5000.00)
+#mensaje_con_formato = "Hola %s %s. Tu sueldo es %.2f"%persona
+mensaje_con_formato = "Hola %s %s. Tu sueldo es %.2f"
+#Los parámetros se pueden poner en la variable o en el print.
+print(mensaje_con_formato%persona)
+
+#Método format
+name = "Juan"
+age = 28
+salary = 3000
+message_format = "Nombre {} Edad {} Sueldo {:.2f}".format(name,age,salary) 
+print(message_format)
