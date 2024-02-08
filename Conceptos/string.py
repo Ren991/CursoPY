@@ -69,3 +69,42 @@ age = 28
 salary = 3000
 message_format = "Nombre {} Edad {} Sueldo {:.2f}".format(name,age,salary) 
 print(message_format)
+
+#Template str - f str
+
+nombre1 = "Juan"
+edad1 = 28
+sueldo1 = 3000
+
+mensaje1 = f"Nombre: {nombre1} Edad: {edad1} sueldo: {sueldo1:.2f}"
+print(mensaje1)
+print(nombre1,edad1, sueldo1, sep=",")#=> El parámetro sep , separa los elementos en ese caso con una ",".
+
+#Multiplicacion de str
+
+resultado = 5*"Hola"
+print(f"Resultado: {resultado}")
+
+#Multiplicacion tupla
+resultado= 5*("hola","Mundo")
+print(f"Resultado: {resultado}")
+
+#Multiplicacion lista
+
+resultado = 10*[0]
+print(f"Resultado: {resultado}, largo: {len(resultado)}")
+
+#Caracteres unicode
+print("Hola\u0020Mundo") #=> Espacio en blanco
+print("Notación simple:","\u0041") #=> Letra A
+print("Notación extendida:" , "\U00000041")#=> Letra A
+print("Notación haexadecimal","\x41")#=>Letra A
+print("Corazon", "\u2665")#=> Corazón
+print("Cara sonriendo:", "\U0001f600")# => Cara sonriendo
+print("Serpiente:","\U0001F40D")#=> Serpiente
+
+# Caracteres ASCII
+caracter = chr(65)
+print("A Mayúscula:", caracter)#=> Letra A en código ASCII
+caracter = chr(64)
+print("Símbolo @:",caracter)#=> Símbolo arroba en códgo ASCII
