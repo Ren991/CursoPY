@@ -17,4 +17,15 @@ valor1,valor2,*valor3,valor4,valor5 = 1,2,3,4,5,6,7,8,9
 
 
 
+def obtener_coordenadas():
+    # Esta función devuelve una tupla con dos valores
+    return 3, 4
+
+# Llamamos a la función y desempaquetamos el resultado en dos variables
+x, y = obtener_coordenadas()
+
+# Imprimimos las coordenadas obtenidas
+print("Coordenada x:", x)
+print("Coordenada y:", y)
+
 
