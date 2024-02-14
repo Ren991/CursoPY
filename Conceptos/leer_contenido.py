@@ -38,7 +38,7 @@ print(cadena.startswith("Hola")) # retorna bool
 print(cadena.endswith("pepe")) # retorna bool
 
 #ALINEAR CADENA
-titulo = "Prueba alinear cadena en python"
+titulo = " Prueba alinear cadena en python  "
 
 print(len(titulo))
 #print(titulo.center(50,"*")) #=> rellena con * hacia ambos lados.
@@ -49,3 +49,9 @@ print(titulo.ljust(50,"*"))
 
 #rjust justifica a la derecha
 print(titulo.rjust(50,"*"))
+
+#Reemplazar contenido en un str
+print(titulo.replace("a","-"))
+
+#Eliminar caracteres al inicio y final de un str - strip
+print(titulo.strip())
