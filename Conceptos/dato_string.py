@@ -117,3 +117,18 @@ print(caracteres_en_bytes)
 mensaje = b"Universidad python"
 print(mensaje[0])#=> Devuelve 85, posición en bytes
 print(chr(mensaje[0]))#=> Devuelve el carácter "U"
+
+# Convertir de str a bytes
+
+string = "Programacion con python"
+
+print("String original:",string)
+
+bytes = string.encode("UTF-8")
+print("Bytes codificado: ", bytes)
+
+#Convertir bytes a str
+
+string2 = bytes.decode("UTF-8")
+print("string decodificado: ",string2)
+
