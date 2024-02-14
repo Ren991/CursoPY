@@ -108,3 +108,12 @@ caracter = chr(65)
 print("A Mayúscula:", caracter)#=> Letra A en código ASCII
 caracter = chr(64)
 print("Símbolo @:",caracter)#=> Símbolo arroba en códgo ASCII
+
+
+#Caracteres bytes
+caracteres_en_bytes =b"Hola mundo"
+print(caracteres_en_bytes)
+
+mensaje = b"Universidad python"
+print(mensaje[0])#=> Devuelve 85, posición en bytes
+print(chr(mensaje[0]))#=> Devuelve el carácter "U"
