@@ -61,3 +61,5 @@ print(f"Unir diccionarios: {dic3}")
 listaStr = [*"HolaMundo"]
 print(listaStr)
 print(*listaStr)
+
+
