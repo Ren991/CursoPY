@@ -50,3 +50,22 @@ numeros2= numeros1[:]
 print(f"Misma referencia ? {numeros1 is numeros2}")#Devuelve False
 print(f"Mismo contenido: {numeros1 == numeros2}")#Devuelve True
 
+#Multiplicacion listas
+
+lista_multiplicacion = 5*[[2, 5]]
+print(lista_multiplicacion)
+
+lista_multiplicacion[2].append(10) #=> Apendea un 10 a todas las listas.
+print(lista_multiplicacion)
+
+#Matrices en python
+
+matriz = [[10,20],[30,40,50],[60,70,80,90]]
+print(f"Matriz original: {matriz}")
+
+print(f"Recuperar Renglon 0 columna 0: {matriz[0][0]}")
+print(f"Recuperar Renglon 2 columna 2: {matriz[2][2]}")
+
+#Modificar valor en matriz
+matriz[2][0] = 65
+print(f"Matriz modificada{matriz}")
