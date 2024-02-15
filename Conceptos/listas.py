@@ -69,3 +69,9 @@ print(f"Recuperar Renglon 2 columna 2: {matriz[2][2]}")
 #Modificar valor en matriz
 matriz[2][0] = 65
 print(f"Matriz modificada{matriz}")
+
+#Ordenamiento de funciones tipo built-in
+
+lista_listas = [[10,14,87,90,71],[4,5,6,7],[9,0,11,15,45,61,70]]
+lista_listas.sort(key=len)
+print(f"Ordenar lista: {lista_listas}")
