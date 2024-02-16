@@ -32,3 +32,31 @@ print(conjunto_copia)
 print(f"Igualdad en contenido? {conjunto == conjunto_copia}")
 print(f"igualdad de referencia? {conjunto is conjunto_copia}")# Apuntan a la misma dirección de memoria ???
 
+
+# OPERACIONES de conjuntos
+
+#Personas con distintas características
+
+pelo_negro = {"Juan","Carla","Pedro","Maria"}
+pelo_rubio = {"Lorenzo","Laura","Marco"}
+ojos_cafe = {"Karla", "Laura"}
+menores_30 = {"Juan", "Karla", "Maria"}
+
+#Todos con ojos cafe y pelo rubio( Union) ( no se repiten los elementos)
+print(ojos_cafe.union(pelo_rubio))
+# Invertir el orden con el mismo resultado (conmutativo)
+print(f"Union pelo rubio y ojos cafe: {pelo_rubio.union(ojos_cafe)}")
+
+# ( interesction) Solo las personas con ojos color cafe y pelo rubio
+print(f"Interseccion café y pelo rubio {ojos_cafe.intersection(pelo_rubio)}")
+
+# ( diference) => Diferencia de conjuntos . Pelo negro pero sin ojos color cafe
+# Personas que se encuentran en el primer set pero no en el segundo
+print(f"Diferencia entre pelo negro y ojos café: {pelo_negro.difference(ojos_cafe)}")
+
+# Diferencia simétrica => Regresa todos los elementos excepto la intersección
+print(f"Diferencia simétrica: {pelo_negro.symmetric_difference(ojos_cafe)}")
+
+
+
+
