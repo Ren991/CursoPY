@@ -37,7 +37,7 @@ print(f"igualdad de referencia? {conjunto is conjunto_copia}")# Apuntan a la mis
 
 #Personas con distintas características
 
-pelo_negro = {"Juan","Carla","Pedro","Maria"}
+pelo_negro = {"Juan","Karla","Pedro","Maria"}
 pelo_rubio = {"Lorenzo","Laura","Marco"}
 ojos_cafe = {"Karla", "Laura"}
 menores_30 = {"Juan", "Karla", "Maria"}
@@ -57,6 +57,14 @@ print(f"Diferencia entre pelo negro y ojos café: {pelo_negro.difference(ojos_ca
 # Diferencia simétrica => Regresa todos los elementos excepto la intersección
 print(f"Diferencia simétrica: {pelo_negro.symmetric_difference(ojos_cafe)}")
 
+# Preguntas de conjuntos 
+# Preguntar si un set está contenido en otro (subset)
+print(menores_30.issubset(pelo_negro))
 
+# Preguntar si un set contiene a otro set ( superset)
+print(menores_30.issuperset(pelo_negro))
 
+# Preguntar si los de pelo negro no tienen pelo rubio ( distjoin)
+# 2 conjuntos que no tienen nada en común
 
+print(pelo_negro.isdisjoint(pelo_rubio))
