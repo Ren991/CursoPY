@@ -12,4 +12,5 @@ class Persona:
     
 persona1 = Persona("Juan","Perez")
 print(persona1)
-        
+
+
