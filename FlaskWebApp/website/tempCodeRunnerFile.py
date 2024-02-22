@@ -1,1 +1,1 @@
-create_database(app)  
+with app.app_context():
