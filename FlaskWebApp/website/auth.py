@@ -18,6 +18,7 @@ def login():
         if user:
             if check_password_hash(user.password, password):
                 flash("Inicio sesión exitoso", category="success")
+                return redirect(url_for('views.home'))
             else:
                 flash("Contraseña incorrecta, intentelo de nuevo", category="error")
         else:
