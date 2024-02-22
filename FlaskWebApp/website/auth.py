@@ -1,7 +1,8 @@
-from flask import Blueprint, render_template,request,flash # BluePrint significa que tiene muchas url definidas. 
+from flask import Blueprint, render_template,request,flash,redirect,url_for # BluePrint significa que tiene muchas url definidas. 
 from .models import User
-from . import db
+from . import db # significa de __init__.py importar db
 from werkzeug.security import generate_password_hash, check_password_hash 
+
 
 auth = Blueprint("auth", __name__)
 
@@ -39,13 +40,13 @@ def sign_up():
 
             pass
         else:
-            new_user = User(email=email, firstName= firstName, password=generate_password_hash(password1, method="sha256"))
+            new_user = User(email=email, first_name= firstName, password=generate_password_hash(password1, method="pbkdf2:sha256"))
             db.session.add(new_user)
             db.session.commit()
             # add user to database
             flash("Cuenta creada!!", category="success")
+            return redirect(url_for("views.home"))
             
-            pass
             
         
     return render_template("sign_up.html")
