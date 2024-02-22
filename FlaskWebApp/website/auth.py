@@ -1,5 +1,7 @@
 from flask import Blueprint, render_template,request,flash # BluePrint significa que tiene muchas url definidas. 
-
+from .models import User
+from . import db
+from werkzeug.security import generate_password_hash, check_password_hash 
 
 auth = Blueprint("auth", __name__)
 
@@ -37,8 +39,12 @@ def sign_up():
 
             pass
         else:
+            new_user = User(email=email, firstName= firstName, password=generate_password_hash(password1, method="sha256"))
+            db.session.add(new_user)
+            db.session.commit()
             # add user to database
             flash("Cuenta creada!!", category="success")
+            
             pass
             
         
