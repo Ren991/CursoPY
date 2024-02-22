@@ -11,6 +11,18 @@ def login():
     #return render_template("login.html", text="Testing", user="Tim") # Así se pasan datos a través de las pantallas.
     data = request.form
     print(data)
+    if request.method == "POST":
+        email = request.form.get("email")
+        password = request.form.get("password")
+        user = User.query.filter_by(email = email).first() # Filtrar usuario
+        if user:
+            if check_password_hash(user.password, password):
+                flash("Inicio sesión exitoso", category="success")
+            else:
+                flash("Contraseña incorrecta, intentelo de nuevo", category="error")
+        else:
+            flash("El email que ingresó no existe", category="error") 
+
     return render_template("login.html")
 @auth.route("/logout")
 def logout():
@@ -24,6 +36,10 @@ def sign_up():
         password1 = request.form.get("password1")
         password2 = request.form.get("password2")
         
+        user = User.query.filter_by(email = email).first() # Filtrar usuario
+        if user:
+            flash("El mail ya existe", category="error")
+            return redirect(url_for("auth.sign_up"))
         if len(email) < 4:
             flash("Email debe tener mas de 4 caracteres", category="error")
             pass
