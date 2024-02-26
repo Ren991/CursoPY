@@ -12,8 +12,19 @@ ventana.geometry('600x400')
 # Cambiamos el nombre de la ventana
 ventana.title('Hola Mundo')
 
+# Creamos método evento_click
+
+def evento_click():
+    boton1.config(text="Botón Presionado")
+    
+    print("Ejecución del evento_click")
+
+    #Crear nuevo botón
+    boton2 = ttk.Button(ventana, text ="Nuevo botón")
+    boton2.pack()
+
 # Creamos un boton (widget), el objeto padre es ventana
-boton1 = ttk.Button(ventana, text='Dar click')
+boton1 = ttk.Button(ventana, text='Dar click', command=evento_click)
 # Utilizar el pack layout manager para mostrar el botón de la ventana
 boton1.pack()
 # Iniciamos la ventana (esta línea la ejecutamos al final)
