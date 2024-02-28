@@ -1,13 +1,24 @@
-from customtkinter import CTk, CTkFrame
-
-c_negro = "#010101"
-c_morado = "#7f5af0"
-c_verde = "#2cb67d"
+import tkinter as tk
+from tkinter import ttk, messagebox
 
 
-root = CTk()#Ventana
-root.geometry("500x600+350+20")# Se establece tamaño de ventana
-root.minsize(480,500)# Se establece tamaño mínimo
-root.config(bg = c_negro)#Fondo negro 
-root.title("Inicio de Sesión")# Se ingresa un título
-root.mainloop()
+# Ventana principal 
+ventana = tk.Tk()
+ventana.geometry("300x130")
+
+ventana.title("Login")
+ventana.resizable(0,0)
+
+# Configuracion del grid
+ventana.columnconfigure(0,weight=1)
+ventana.columnconfigure(1, weight=3)
+
+# Usuario
+
+usuario_etiqueta = ttk.Label(ventana, text="Usuario: ")
+usuario_etiqueta.grid(row=0, column=0, sticky=tk.E , padx=5, pady= 5)
+usuario_entrada = ttk.Entry(ventana)
+usuario_entrada.grid(row=0, column=1, sticky=tk.W, padx=5, pady=5)
+
+#Ejectuar la ventana
+ventana.mainloop()
