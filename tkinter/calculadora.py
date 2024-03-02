@@ -115,8 +115,16 @@ class Calculadora(tk.Tk):
         boton_evaluar.grid(row=4, column =3 ,padx=1,pady=1)
         
     def _evento_evaluar(self):
-        resultado = str(eval(self.expresion)) #=> Regresa valor como cadena, se toma de la caja de texto.
-        self.entrada_texto.set(resultado)
+        try:
+            if self.expresion:
+                resultado = str(eval(self.expresion)) #=> Regresa valor como cadena, se toma de la caja de texto.
+                self.entrada_texto.set(resultado)
+        except Exception as e:
+            messagebox.showerror("Error",f"Ocurrió un error: {e}")
+        finally:
+            self.entrada_texto.set("")
+        
+        self.expresion = ""
     
     def _evento_limpiar(self):
          self.expresion = ""
