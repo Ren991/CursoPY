@@ -98,6 +98,12 @@ class Calculadora(tk.Tk):
                                 bg="#eee",cursor="hand2",
                                 command=lambda: self._evento_click("+"))
         boton_sumar.grid(row=3,column=3,padx=1,pady=1)
+        
+        # Quinto renglon
+        boton_cero = tk.Button(botones_frame, text="0",width=10,height=3,bd=0, bg="#fff",
+                               cursor="hand2", command=lambda: self._evento_click(0))
+        
+        boton_cero.grid(row=4,column=0,columnspan=2,padx=1,pady=1)
     
     
     def _evento_limpiar(self):
