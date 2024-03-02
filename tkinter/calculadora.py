@@ -100,11 +100,23 @@ class Calculadora(tk.Tk):
         boton_sumar.grid(row=3,column=3,padx=1,pady=1)
         
         # Quinto renglon
-        boton_cero = tk.Button(botones_frame, text="0",width=10,height=3,bd=0, bg="#fff",
+        boton_cero = tk.Button(botones_frame, text="0",width=21,height=3,bd=0, bg="#fff",
                                cursor="hand2", command=lambda: self._evento_click(0))
         
         boton_cero.grid(row=4,column=0,columnspan=2,padx=1,pady=1)
-    
+
+        boton_punto= tk.Button(botones_frame,text=".", width=10,height=3,bd=0,bg="#eee",
+                               cursor="hand2",command=lambda : self._evento_click("."))
+        boton_punto.grid(row=4,column=2,padx=1,pady=1)
+        
+        boton_evaluar= tk.Button(botones_frame, text="=",width=10, height=3, bd=0, bg="#eee",
+                                 cursor="hand2", command=self._evento_evaluar)
+        
+        boton_evaluar.grid(row=4, column =3 ,padx=1,pady=1)
+        
+    def _evento_evaluar(self):
+        resultado = str(eval(self.expresion)) #=> Regresa valor como cadena, se toma de la caja de texto.
+        self.entrada_texto.set(resultado)
     
     def _evento_limpiar(self):
          self.expresion = ""
