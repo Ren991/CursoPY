@@ -61,6 +61,43 @@ class Calculadora(tk.Tk):
                                 bg="#eee",cursor="hand2",
                                 command=lambda: self._evento_click("*"))
         boton_multiplicar.grid(row=1,column=3,padx=1,pady=1)
+        
+        # Tercer renglon 
+        boton_cuatro = tk.Button(botones_frame,text="4",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(4))
+        boton_cuatro.grid(row=2,column=0,padx=1,pady=1)
+        
+        boton_cinco = tk.Button(botones_frame,text="5",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(5))
+        boton_cinco.grid(row=2,column=1,padx=1,pady=1)
+        
+        boton_seis = tk.Button(botones_frame,text="6",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(6))
+        boton_seis.grid(row=2,column=2,padx=1,pady=1)
+        
+        boton_restar = tk.Button(botones_frame, text="-", width=10, height=3, bd=0,
+                                bg="#eee",cursor="hand2",
+                                command=lambda: self._evento_click("-"))
+        boton_restar.grid(row=2,column=3,padx=1,pady=1)
+        
+        
+         # Cuarto renglon 
+        boton_uno = tk.Button(botones_frame,text="1",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(1))
+        boton_uno.grid(row=3,column=0,padx=1,pady=1)
+        
+        boton_dos = tk.Button(botones_frame,text="2",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(2))
+        boton_dos.grid(row=3,column=1,padx=1,pady=1)
+        
+        boton_tres = tk.Button(botones_frame,text="3",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(3))
+        boton_tres.grid(row=3,column=2,padx=1,pady=1)
+        
+        boton_sumar = tk.Button(botones_frame, text="+", width=10, height=3, bd=0,
+                                bg="#eee",cursor="hand2",
+                                command=lambda: self._evento_click("+"))
+        boton_sumar.grid(row=3,column=3,padx=1,pady=1)
     
     
     def _evento_limpiar(self):
