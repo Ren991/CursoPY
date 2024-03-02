@@ -43,6 +43,25 @@ class Calculadora(tk.Tk):
                                 bg="#eee",cursor="hand2",
                                 command=lambda: self._evento_click("/"))
         boton_dividir.grid(row=0,column=3,padx=1,pady=1)
+        
+        # Segundo renglon 
+        boton_siete = tk.Button(botones_frame,text="7",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(7))
+        boton_siete.grid(row=1,column=0,padx=1,pady=1)
+        
+        boton_ocho = tk.Button(botones_frame,text="8",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(8))
+        boton_ocho.grid(row=1,column=1,padx=1,pady=1)
+        
+        boton_nueve = tk.Button(botones_frame,text="9",width=10, height=3,bd=0, bg="#fff",
+                                cursor="hand2", command=lambda: self._evento_click(9))
+        boton_nueve.grid(row=1,column=2,padx=1,pady=1)
+        
+        boton_multiplicar = tk.Button(botones_frame, text="*", width=10, height=3, bd=0,
+                                bg="#eee",cursor="hand2",
+                                command=lambda: self._evento_click("*"))
+        boton_multiplicar.grid(row=1,column=3,padx=1,pady=1)
+    
     
     def _evento_limpiar(self):
          self.expresion = ""
