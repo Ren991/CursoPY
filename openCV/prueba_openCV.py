@@ -21,7 +21,7 @@ while True:
 
     # Si se detectan manos, iterar sobre ellas
     if results.multi_hand_landmarks:
-        for hand_landmarks in results.multi_hand_landmarks:
+        for idx, hand_landmarks in enumerate(results.multi_hand_landmarks):
             # Obtener la posición de la muñeca de la mano
             wrist = hand_landmarks.landmark[mp_hands.HandLandmark.WRIST]
 
@@ -34,9 +34,19 @@ while True:
 
             # Determinar la mano levantada
             if wrist_px[1] < img_h // 2:  # Si la muñeca está por encima del centro de la imagen
-                cv2.putText(frame, "Mano levantada", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                position_text = "Mano levantada"
             else:
-                cv2.putText(frame, "Mano abajo", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                position_text = "Mano abajo"
+
+            # Determinar si es mano izquierda o derecha
+            if idx == 0:
+                hand_text = "Mano izquierda"
+            else:
+                hand_text = "Mano derecha"
+
+            # Mostrar el texto
+            cv2.putText(frame, position_text, (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, hand_text, (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     # Mostrar el fotograma resultante
     cv2.imshow('frame', frame)
