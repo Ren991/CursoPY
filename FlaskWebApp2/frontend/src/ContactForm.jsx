@@ -1,11 +1,14 @@
 import {useState} from "react"
 
-const ContactForm = ({})=>{
+const ContactForm = ({existingContact = {}, updateCallback})=>{
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
     const [email, setEmail ] = useState("")
 
-    const onSubmit = async(e)=>{
+    const updating = Object.entries(existingContact).length !== 0
+
+    
+    const onSubmit = async (e) => {
         e.preventDefault()
 
         const data = {
@@ -13,22 +16,20 @@ const ContactForm = ({})=>{
             lastName,
             email
         }
-
-        const url = "http://127.0.0.1:5000/create_contact"
+        const url = "http://127.0.0.1:5000/" + (updating ? `update_contact/${existingContact.id}` : "create_contact")
         const options = {
-            method : "POST",
-            headers : {
+            method: updating ? "PATCH" : "POST",
+            headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         }
-
-        const response = await fetch(url,options)
-        if (response.status !== 201 && response.status !== 200){
+        const response = await fetch(url, options)
+        if (response.status !== 201 && response.status !== 200) {
             const data = await response.json()
             alert(data.message)
-        }else{
-            //success
+        } else {
+            updateCallback()
         }
     }
 
@@ -47,7 +48,7 @@ const ContactForm = ({})=>{
                     <label htmlFor="email">Mail:</label>
                     <input type="text" id="email" value={email} onChange={(e)=> setEmail(e.target.value)}></input>
                 </div>
-                <button type="submit">Crear contacto </button>
+                <button type="submit">{updating ? "Modificar contacto" : "crear contacto"}</button>
             </form>        
         </>
     )
